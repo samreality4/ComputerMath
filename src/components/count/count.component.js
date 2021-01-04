@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TextField } from "@material-ui/core";
+import { TextField, Button } from "@material-ui/core";
 
 const Count = () => {
   const [state, setState] = useState();
@@ -18,6 +18,7 @@ const Count = () => {
           value={state}
         />
       </form>
+      <Button variant="contained" color="primary">Start</Button>
     </div>
   );
 };
