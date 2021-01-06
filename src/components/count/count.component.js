@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import { TextField, Button } from "@material-ui/core";
 
+
 const Count = () => {
-  const [state, setState] = useState();
 
   function handleChange(event) {
-    setState(event.target.value);
+    
+  }
+
+  function handlePermutation(){
+    
   }
 
   return (
@@ -18,7 +22,7 @@ const Count = () => {
           value={state}
         />
       </form>
-      <Button variant="contained" color="primary">Start</Button>
+      <Button variant="contained" color="primary" onClick={handlePermutation}>Start</Button>
     </div>
   );
 };
